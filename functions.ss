@@ -17,7 +17,8 @@
 (define xI->xIU
   (lambda (l)
     (if (equal? (car (last-member l)) 'I)
-      (append l '(U)))))
+      (append l '(U))
+      l)))
 
 (define Mx->Mxx
   (lambda (l i)
