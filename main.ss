@@ -1,5 +1,5 @@
-(load "functions.ss")
-(load "repl.ss")
+(load "src/functions.ss")
+(load "src/repl.ss")
 
 (newline) (display "MU-puzzle REPL")
 (newline) (display "Note that the positions are zero-indexed.")
