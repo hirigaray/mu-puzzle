@@ -1,4 +1,4 @@
-; MU-puzzle implementation
+; MU-puzzle functions
 
 (define last-member
   (lambda (l)
