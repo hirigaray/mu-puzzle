@@ -1,3 +1,3 @@
 # MU-puzzle
 
-Open with `guile -l repl.ss` or use your favorite Scheme implementation.
+Open with `guile -l main.ss` or use your favorite Scheme implementation.
