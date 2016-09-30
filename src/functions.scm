@@ -15,7 +15,7 @@
       (if (zero? n) ; if the number of elements is zero
         '() ; return an empty list
         ; add the element to the list
-        ; and proceed to adding the other elements.
+        ; and proceed to add the other elements.
         (cons (car l) (take (- n 1) (cdr l)))))))
 
 ; appends U to the end of list l if it ends with I
