@@ -1,4 +1,4 @@
-(load "functions.ss")
+(load "functions.scm")
 
 (define repl
   (lambda (s)

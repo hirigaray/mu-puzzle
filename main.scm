@@ -1,5 +1,4 @@
-;(load "src/functions.ss")
-(load "src/repl.ss")
+(load "src/repl.scm")
 
 (newline) (display "Copyright (c) Luiz de Milon, 2016")
 (newline) (display "This program is distributed under the ISC license.")
