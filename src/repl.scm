@@ -1,3 +1,5 @@
+(load "functions.ss")
+
 (define repl
   (lambda (s)
     (newline)
@@ -12,11 +14,13 @@
       (repl
         (if (equal? cmd 1)
           (xI->xIU s)
-          (begin
-            (display "Apply at what position? ")
-            (let ((pos (read)))
-              (cond
-                ((equal? cmd 2) (Mx->Mxx s pos))
-                ((equal? cmd 3) (III->U s pos))
-                ((equal? cmd 4) (dropUU s pos))))))))))
+          (if (eof-object? cmd)
+            (quit)
+            (begin
+              (display "Apply at what position? ")
+              (let ((pos (read)))
+                (cond
+                  ((equal? cmd 2) (Mx->Mxx s pos))
+                  ((equal? cmd 3) (III->U s pos))
+                  ((equal? cmd 4) (dropUU s pos)))))))))))
 
