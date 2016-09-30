@@ -6,7 +6,7 @@
     (display "2: Mx -> Mxx")                        (newline)
     (display "3: III -> U")                         (newline)
     (display "4: Drop UU")                          (newline)
-    (display "Current string: ") (display s)       (newline)
+    (display "Current string: ") (display s)        (newline)
 
     (let ((cmd (read)))
       (repl
