@@ -1,6 +1,8 @@
-(load "src/repl.scm")
+#lang racket
 
-(newline) (display "Copyright (c) Luiz de Milon, 2016")
+(require "src/repl.rkt")
+
+(newline) (display "Copyright (c) Luiz de Milon, 2017")
 (newline) (display "This program is distributed under the ISC license.")
 (newline) (display "See LICENSE for details.")
 (newline)

@@ -1,3 +1,7 @@
 # MU-puzzle
 
-Open with `guile main.scm` or use your favorite Scheme implementation.
+This is an implementation of a REPL that lets you apply the functions
+described in the first chapter of
+Gödel, Escher, Bach, by Douglas R. Hofstadter
+
+Open with `racket main.rkt`
