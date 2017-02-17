@@ -26,6 +26,7 @@
           (aux (cdr in) cnt (cons (car in) str) out))
         (aux (cdr in) (- cnt 1) (cons (car in) str) out)))))
 
+; returns list l with the ith instance of '(I I I) replaced with 'U
 (define (III->U l i)
   ; if cnt is zero, the next '(I I I) will be replaced by 'U
   (let aux ((in l) (cnt i) (out '()))
