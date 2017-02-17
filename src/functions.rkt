@@ -12,8 +12,7 @@
     [(not (equal? 'I (last l))) l]
     [else (reverse (cons 'U (reverse l)))]))
 
-; returns list l with a duplicated string x
-; after the ith instance of the M character
+; returns list l with a duplicated string x after the ith instance of the M character
 (define (Mx->Mxx l i)
   ; str stores the string before the current Mx
   (let aux ((in l) (cnt i) (str '()) (out '()))
@@ -32,7 +31,6 @@
       [(not (equal? '(I I I) (take in 3))) (aux (cdr in) cnt (cons (car in) out))]
       [(not (zero? cnt)) (aux (cdr in) (- cnt 1) (cons (car in) out))]
       [else (aux (cdddr in) cnt (cons 'U out))])))
-
 
 ; returns list l without the ith instance of UU
 (define (dropUU l i)
