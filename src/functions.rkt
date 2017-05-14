@@ -30,7 +30,7 @@
                [(not (>= (length in) 3)) (aux (cdr in) cnt       (cons (car in) out))]
                       [(not (zero? cnt)) (aux (cdr in) (- cnt 1) (cons (car in) out))]
     [(not (equal? '(I I I) (take in 3))) (aux (cdr in) cnt       (cons (car in) out))]
-    [else (aux (cdddr in) cnt (cons 'U out))])))
+                                   [else (aux (cdddr in) cnt (cons 'U out))])))
 
 ; returns list l without the ith instance of UU
 (define (dropUU l i)
